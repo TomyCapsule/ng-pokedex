@@ -1,0 +1,23 @@
+<h2>{{data.name | titlecase}}</h2>
+<div class="dialog">
+  <ngx-charts-polar-chart
+    [view]="view"
+    [scheme]="colorScheme"
+    [legend]="legend"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxis]="xAxis"
+    [yAxis]="yAxis"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [results]="stats"
+  >
+  </ngx-charts-polar-chart>
+  <div>
+    <img [src]="data.sprites.front_default" alt="sprite">
+    <p>Types: {{data.types[0].type.name}}</p>
+    <ul>
+      <li *ngFor="let stat of stats[0]['series']" style="text-decoration: none">{{stat.name}} : {{stat.value}}</li>
+    </ul>
+  </div>
+</div>

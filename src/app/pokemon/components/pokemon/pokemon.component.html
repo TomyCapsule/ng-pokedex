@@ -1,0 +1,10 @@
+  <mat-card [ngStyle]="getCardColor()" class="pokecard" (click)="openDialog()">
+    <img
+      [src]="'assets/images/pokemon/' + pokemon.id + '.png'"
+      [alt]="pokemon.name"
+    />
+    <mat-card-content>
+      <p>#{{pokemon.id}}  {{ pokemon.name }}</p>
+      <p>Types : {{ pokemon.types.join('-')}}</p>
+    </mat-card-content>
+  </mat-card>

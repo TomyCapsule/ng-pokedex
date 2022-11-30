@@ -1,0 +1,7 @@
+.pokegrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17%, 1fr));
+  padding: 0.5em;
+  column-gap: 10px;
+  row-gap: 10px;
+}

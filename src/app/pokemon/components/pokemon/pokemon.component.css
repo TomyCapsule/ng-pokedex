@@ -1,0 +1,15 @@
+.pokecard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+}
+
+.dialog {
+  display: flex;
+  justify-content: space-around;
+}
